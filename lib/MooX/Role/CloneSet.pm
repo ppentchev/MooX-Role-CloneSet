@@ -75,7 +75,7 @@ immutable objects.
 
 =head1 LICENSE
 
-Copyright (C) 2016  Peter Pentchev.
+Copyright (C) 2016  Peter Pentchev E<lt>roam@ringlet.netE<gt>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
