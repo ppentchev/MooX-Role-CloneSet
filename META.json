@@ -28,34 +28,28 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.035",
-	    "Moo" : "1.006",
-	    "namespace::clean" : "0.25"
+            "Module::Build::Tiny" : "0.035"
          }
       },
       "develop" : {
          "requires" : {
-	    "Moo" : "1.006",
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion::Fast" : "0.04",
             "Test::PAUSE::Permissions" : "0.04",
             "Test::Pod" : "1.41",
-            "Test::Spellunker" : "v0.2.7",
-	    "namespace::clean" : "0.25"
+            "Test::Spellunker" : "v0.2.7"
          }
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.012",
-	    "Moo" : "1.006",
-	    "namespace::clean" : "0.25"
+            "Moo" : "1.006",
+            "namespace::clean" : "0.25",
+            "perl" : "5.012"
          }
       },
       "test" : {
          "requires" : {
-	    "Moo" : "1.006",
-            "Test::More" : "0.98",
-	    "namespace::clean" : "0.25"
+            "Test::More" : "0.98"
          }
       }
    },
