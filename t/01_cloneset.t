@@ -1,52 +1,16 @@
+#!/usr/bin/perl
+
 use v5.12;
 use strict;
 use warnings;
 
 use Scalar::Util qw(blessed);
 
+use lib 't/lib';
+use Test::CloneSet qw(test_something);
+use Something;
+
 use Test::More 0.98;
-
-package Something
-{
-	use v5.14;
-	use strict;
-	use warnings;
-
-	use Moo;
-	use namespace::clean;
-
-	with 'MooX::Role::CloneSet';
-
-	has name => (
-		is => 'ro',
-	);
-
-	has color => (
-		is => 'ro',
-	);
-}
-
-sub test_something($ $ $ $)
-{
-	my ($test, $thing, $name, $color) = @_;
-
-	subtest "$test" => sub {
-		plan tests => 3;
-
-		my $fine = defined($thing) &&
-		    defined blessed($thing) &&
-		    $thing->isa('Something');
-
-		ok $fine, "we have something";
-		SKIP:
-		{
-			skip 'cannot test the attributes of nothing', 2 unless $fine;
-
-			is $thing->name, $name, "the right name";
-			is $thing->color, $color, "the right color";
-		}
-	}
-}
 
 plan tests => 4;
 
