@@ -54,6 +54,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ppentchev/MooX-Role-CloneSet/issues"
+      },
+      "homepage" : "https://github.com/ppentchev/MooX-Role-CloneSet",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ppentchev/MooX-Role-CloneSet.git",
+         "web" : "https://github.com/ppentchev/MooX-Role-CloneSet"
+      }
+   },
    "version" : "v0.1.0",
    "x_authority" : "cpan:ROAM",
    "x_serialization_backend" : "JSON::PP version 2.27400"
