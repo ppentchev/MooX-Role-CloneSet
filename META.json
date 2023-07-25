@@ -65,7 +65,7 @@
          "web" : "https://github.com/ppentchev/MooX-Role-CloneSet"
       }
    },
-   "version" : "v0.1.1_1",
+   "version" : "v0.1.1",
    "x_authority" : "cpan:ROAM",
    "x_serialization_backend" : "JSON::PP version 4.07",
    "x_static_install" : 1
