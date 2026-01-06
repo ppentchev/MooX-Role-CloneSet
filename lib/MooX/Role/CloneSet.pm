@@ -4,10 +4,10 @@ use 5.012;
 use strict;
 use warnings;
 
-use version; our $VERSION = version->declare("v0.1.1");
-
 use Moo::Role;
 use namespace::clean;
+
+our $VERSION = v0.1.1;
 
 sub cset($ %) {
 	my ( $self, %new ) = @_;
