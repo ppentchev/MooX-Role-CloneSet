@@ -19,4 +19,5 @@ directory = [
   "author",
   "builder",
   "tools",
+  "LICENSES",
 ]
