@@ -4,3 +4,15 @@ authority="cpan:ROAM"
 
 module_maker="ModuleBuildTiny"
 
+[no_index]
+directory = [
+  "t",
+  "xt",
+  "inc",
+  "share",
+  "eg",
+  "examples",
+  "author",
+  "builder",
+  "tools",
+]

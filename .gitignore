@@ -14,6 +14,8 @@ nytprof/
 
 cover_db/
 
+/.tidyall.d/
+
 *.bak
 *.old
 *~

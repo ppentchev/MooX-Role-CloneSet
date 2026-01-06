@@ -1,0 +1,20 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: Artistic-1.0-Perl
+
+severity = 1
+verbose = 11
+theme = core
+
+# We still need those for type checking
+[-Subroutines::ProhibitSubroutinePrototypes]
+
+[Documentation::PodSpelling]
+spell_command = aspell --lang=en_US list
+# Is the "dereferencing metaclasses" thing some kind of perlcritic bug?
+stop_words = Pentchev dereferencing metaclasses
+
+# We do run perltidy...
+[-CodeLayout::RequireTidyCode]
+
+# Maybe we should do this at some point...
+[-Documentation::RequirePodSections]
