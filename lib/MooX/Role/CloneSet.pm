@@ -74,10 +74,8 @@ immutable objects.
 
 =head1 LICENSE
 
-Copyright (C)  Peter Pentchev E<lt>roam@ringlet.netE<gt>
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+SPDX-FileCopyrightText: Peter Pentchev E<lt>roam@ringlet.netE<gt>
+SPDX-License-Identifier: Artistic-2.0
 
 =head1 AUTHOR
 

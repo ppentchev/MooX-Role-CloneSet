@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: Artistic-2.0
 
 package Something::Mutable;
 

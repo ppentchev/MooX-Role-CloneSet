@@ -11,7 +11,7 @@ theme = core
 [Documentation::PodSpelling]
 spell_command = aspell --lang=en_US list
 # Is the "dereferencing metaclasses" thing some kind of perlcritic bug?
-stop_words = Pentchev dereferencing metaclasses
+stop_words = FileCopyrightText Pentchev SPDX dereferencing metaclasses
 
 # We do run perltidy...
 [-CodeLayout::RequireTidyCode]

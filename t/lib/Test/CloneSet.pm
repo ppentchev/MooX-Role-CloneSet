@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: Peter Pentchev <roam@ringlet.net>
+# SPDX-License-Identifier: Artistic-2.0
+
 package Test::CloneSet;
 
 use 5.012;
