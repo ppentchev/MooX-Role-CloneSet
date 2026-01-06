@@ -1,6 +1,6 @@
 package Test::CloneSet;
 
-use v5.12;
+use 5.012;
 use strict;
 use warnings;
 
