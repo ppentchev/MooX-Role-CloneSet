@@ -4,9 +4,9 @@
       "Peter Pentchev <roam@ringlet.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.1.21, CPAN::Meta::Converter version 2.150010",
+   "generated_by" : "Minilla/v3.1.29, CPAN::Meta::Converter version 2.150010",
    "license" : [
-      "perl_5"
+      "artistic_2"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -22,7 +22,8 @@
          "eg",
          "examples",
          "author",
-         "builder"
+         "builder",
+         "tools"
       ]
    },
    "prereqs" : {
@@ -65,8 +66,8 @@
          "web" : "https://github.com/ppentchev/MooX-Role-CloneSet"
       }
    },
-   "version" : "v0.1.1",
+   "version" : "v0.1.2",
    "x_authority" : "cpan:ROAM",
-   "x_serialization_backend" : "JSON::PP version 4.07",
+   "x_serialization_backend" : "JSON::PP version 4.16",
    "x_static_install" : 1
 }
