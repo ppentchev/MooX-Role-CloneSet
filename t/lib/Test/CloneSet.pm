@@ -36,6 +36,8 @@ sub test_something($ $ $ $) {
 			}
 		},
 	);
+
+	return 1;
 }
 
 1;
