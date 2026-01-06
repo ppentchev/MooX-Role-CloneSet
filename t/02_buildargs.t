@@ -4,6 +4,7 @@ use 5.012;
 use strict;
 use warnings;
 
+use English      qw(-no_match_vars);
 use Scalar::Util qw(blessed);
 
 use lib 't/lib';
@@ -36,12 +37,15 @@ subtest 'Plain CloneSet' => sub {
 };
 
 subtest 'CloneSet::BuildArgs' => sub {
-	my $have_buildargs;
-	eval {
-		require MooX::BuildArgs;
-		$have_buildargs = 1;
-	};
-	plan skip_all => 'MooX::BuildArgs not installed' unless $have_buildargs;
+	if (
+		!eval {
+			require MooX::BuildArgs;
+			1;
+		}
+		)
+	{
+		plan skip_all => 'MooX::BuildArgs not installed';
+	}
 
 	require Something::Else;
 

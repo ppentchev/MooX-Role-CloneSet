@@ -22,13 +22,15 @@ use_ok $_ for @modules;
 SKIP:
 {
 
-	my $have_buildargs;
-	eval {
-		require MooX::BuildArgs;
-		$have_buildargs = 1;
-	};
-	skip 'MooX::BuildArgs is not installed', scalar @buildargs_modules
-		unless $have_buildargs;
+	if (
+		!eval {
+			require MooX::BuildArgs;
+			1;
+		}
+		)
+	{
+		skip 'MooX::BuildArgs is not installed', scalar @buildargs_modules;
+	}
 
 	use_ok $_ for @buildargs_modules;
 }
