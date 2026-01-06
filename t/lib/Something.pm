@@ -11,12 +11,8 @@ use namespace::clean;
 
 with 'MooX::Role::CloneSet';
 
-has name => (
-	is => 'ro',
-);
+has name => ( is => 'ro', );
 
-has color => (
-	is => 'ro',
-);
+has color => ( is => 'ro', );
 
 1;

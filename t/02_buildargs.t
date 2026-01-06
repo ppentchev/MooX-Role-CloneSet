@@ -17,21 +17,20 @@ plan tests => 2;
 subtest 'Plain CloneSet' => sub {
 	plan tests => 3;
 
-	my $first = Something::Mutable->new(name => 'giant panda', color => 'black & white');
-	test_something 'The original panda',
-	    $first, 'giant panda', 'black & white';
+	my $first =
+		Something::Mutable->new( name => 'giant panda', color => 'black & white' );
+	test_something 'The original panda', $first, 'giant panda', 'black & white';
 
 	# We are really not supposed to do this with immutable objects,
 	# but it's necessary for demonstrating the difference between
 	# the two CloneSet roles.
-	
-	$first->name('another giant panda');
-	test_something 'Another panda',
-	    $first, 'another giant panda', 'black & white';
 
-	my $second = $first->cset(color => 'see for yourself');
+	$first->name('another giant panda');
+	test_something 'Another panda', $first, 'another giant panda', 'black & white';
+
+	my $second = $first->cset( color => 'see for yourself' );
 	test_something 'Yet another panda',
-	    $second, 'another giant panda', 'see for yourself';
+		$second, 'another giant panda', 'see for yourself';
 };
 
 subtest 'CloneSet::BuildArgs' => sub {
@@ -46,19 +45,16 @@ subtest 'CloneSet::BuildArgs' => sub {
 
 	plan tests => 3;
 
-	my $first = Something::Else->new(name => 'giant panda', color => 'black & white');
-	test_something 'The original panda',
-	    $first, 'giant panda', 'black & white';
+	my $first = Something::Else->new( name => 'giant panda', color => 'black & white' );
+	test_something 'The original panda', $first, 'giant panda', 'black & white';
 
 	# We are really not supposed to do this with immutable objects,
 	# but it's necessary for demonstrating the difference between
 	# the two CloneSet roles.
-	
-	$first->name('another giant panda');
-	test_something 'Another panda',
-	    $first, 'another giant panda', 'black & white';
 
-	my $second = $first->cset(color => 'see for yourself');
-	test_something 'Yet another panda',
-	    $second, 'giant panda', 'see for yourself';
+	$first->name('another giant panda');
+	test_something 'Another panda', $first, 'another giant panda', 'black & white';
+
+	my $second = $first->cset( color => 'see for yourself' );
+	test_something 'Yet another panda', $second, 'giant panda', 'see for yourself';
 };

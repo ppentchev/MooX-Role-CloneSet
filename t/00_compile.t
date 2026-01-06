@@ -26,7 +26,7 @@ SKIP:
 		$have_buildargs = 1;
 	};
 	skip 'MooX::BuildArgs is not installed', scalar @buildargs_modules
-	    unless $have_buildargs;
+		unless $have_buildargs;
 
 	use_ok $_ for @buildargs_modules;
 }

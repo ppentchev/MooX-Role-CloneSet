@@ -11,8 +11,6 @@ use namespace::clean;
 
 extends 'Something';
 
-has name => (
-	is => 'rw',
-);
+has name => ( is => 'rw', );
 
 1;

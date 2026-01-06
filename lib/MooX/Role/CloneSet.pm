@@ -9,12 +9,11 @@ use version; our $VERSION = version->declare("v0.1.1");
 use Moo::Role;
 use namespace::clean;
 
-sub cset($ %)
-{
-	my ($self, %new) = @_;
+sub cset($ %) {
+	my ( $self, %new ) = @_;
 
 	# Hmm, so Moo doesn't have metaclasses, right?
-	return $self->new(%{$self}, %new);
+	return $self->new( %{$self}, %new );
 }
 
 1;

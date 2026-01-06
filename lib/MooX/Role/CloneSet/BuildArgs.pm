@@ -11,12 +11,11 @@ use namespace::clean;
 
 with 'MooX::BuildArgs';
 
-sub cset($ %)
-{
-	my ($self, %new) = @_;
+sub cset($ %) {
+	my ( $self, %new ) = @_;
 
 	# Hmm, so Moo doesn't have metaclasses, right?
-	return $self->new(%{$self->build_args}, %new);
+	return $self->new( %{ $self->build_args }, %new );
 }
 
 1;
