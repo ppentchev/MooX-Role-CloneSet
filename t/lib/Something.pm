@@ -9,6 +9,8 @@ use warnings;
 use Moo;
 use namespace::clean;
 
+our $VERSION = v0.1.0;
+
 with 'MooX::Role::CloneSet';
 
 has name => ( is => 'ro', );

@@ -9,6 +9,8 @@ use warnings;
 use Moo;
 use namespace::clean;
 
+our $VERSION = v0.1.0;
+
 extends 'Something::Mutable';
 with 'MooX::Role::CloneSet::BuildArgs';
 

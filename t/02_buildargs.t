@@ -12,6 +12,8 @@ use Something::Mutable;
 
 use Test::More 0.98;
 
+our $VERSION = v0.1.0;
+
 plan tests => 2;
 
 subtest 'Plain CloneSet' => sub {

@@ -6,6 +6,8 @@ use warnings;
 
 use Test::More 0.98;
 
+our $VERSION = v0.1.0;
+
 my @modules = qw(
 	MooX::Role::CloneSet
 );

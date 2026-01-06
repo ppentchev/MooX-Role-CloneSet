@@ -12,6 +12,8 @@ use Something;
 
 use Test::More 0.98;
 
+our $VERSION = v0.1.0;
+
 plan tests => 4;
 
 my $first = Something->new( name => 'giant panda', color => 'black & white' );
