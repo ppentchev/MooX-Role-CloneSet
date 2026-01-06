@@ -27,9 +27,11 @@ sub test_something($ $ $ $) {
 			Test::More::ok( $fine, 'we have something' );
 		SKIP:
 			{
-				Test::More::skip( 'cannot test the attributes of nothing',
-					2, )
-					unless $fine;
+				if ( !$fine ) {
+					Test::More::skip(
+						'cannot test the attributes of nothing', 2,
+					);
+				}
 
 				Test::More::is( $thing->name,  $name,  'the right name' );
 				Test::More::is( $thing->color, $color, 'the right color' );

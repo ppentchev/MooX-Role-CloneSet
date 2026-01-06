@@ -17,7 +17,9 @@ my @buildargs_modules = qw(
 
 plan tests => scalar @modules + scalar @buildargs_modules;
 
-use_ok $_ for @modules;
+for (@modules) {
+	use_ok $_;
+}
 
 SKIP:
 {
@@ -32,5 +34,7 @@ SKIP:
 		skip 'MooX::BuildArgs is not installed', scalar @buildargs_modules;
 	}
 
-	use_ok $_ for @buildargs_modules;
+	for (@buildargs_modules) {
+		use_ok $_;
+	}
 }
