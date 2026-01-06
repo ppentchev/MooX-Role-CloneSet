@@ -8,7 +8,7 @@ use parent qw(Exporter);
 
 use Scalar::Util qw(blessed);
 
-our $VERSION = v0.1.1;
+our $VERSION = v0.1.2;
 
 our @EXPORT_OK = qw(&test_something);
 

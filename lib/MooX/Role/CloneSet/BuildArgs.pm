@@ -7,7 +7,7 @@ use warnings;
 use Moo::Role;
 use namespace::clean;
 
-our $VERSION = v0.1.1;
+our $VERSION = v0.1.2;
 
 with 'MooX::BuildArgs';
 
