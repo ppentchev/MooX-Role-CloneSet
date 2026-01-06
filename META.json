@@ -23,7 +23,8 @@
          "examples",
          "author",
          "builder",
-         "tools"
+         "tools",
+         "LICENSES"
       ]
    },
    "prereqs" : {
