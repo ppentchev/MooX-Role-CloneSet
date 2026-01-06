@@ -5,6 +5,12 @@ Revision history for Perl extension MooX-Role-CloneSet
     - Add Perl 5.22, 5.24, and 5.26 to the Travis CI testing.
     - Fix a test module's package/Exporter structure bug exposed by
       Perl 5.39.1.
+    - Reformat the source code using `perltidy`.
+    - Fix many minor nits suggested by `perlcritic`.
+    - Add some `execline` tools to run `perltidy` and `perlcritic` via `tidyall`.
+    - Relicense under version 2 of the Artistic license.
+    - Switch to yearless copyright notices.
+    - Switch to SPDX copyright and license tags.
 
 v0.1.0 2016-09-13T08:36:48Z
 
