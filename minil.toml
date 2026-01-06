@@ -2,8 +2,7 @@
 # SPDX-License-Identifier: Artistic-2.0
 
 name = "MooX-Role-CloneSet"
-# badges = ["travis"]
-authority="cpan:ROAM"
+authority = "cpan:ROAM"
 license = "artistic_2"
 
 module_maker="ModuleBuildTiny"
